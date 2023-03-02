@@ -1,7 +1,6 @@
 function perfectnum(){
 sum=0;
 var a=document.getElementById("num").value;
-console.log(a);
 var og=a;
 for(i=1;i<a;i++){
 if(a%i==0){
@@ -9,27 +8,30 @@ if(a%i==0){
 }
 }
 if(og==sum)
-document.write(og+" is a perfect number");
+console.log(og+" is a perfect number");
 else
-document.write(og+" is not a perfect number");
+console.log(og+" is not a perfect number");
 }
 function factorial(){
 fact=1;
-var n=getElementById('num').value;
+var n=document.getElementById("num1").value;
 i=1;
 do{
     fact=fact*i;
     i++;
 }
 while(i<=n)
-document.write("The factorial of "+n+" is "+fact);
+console.log("The factorial of "+n+" is "+fact);
 }
 
-function fibonacci(c){
-j=0;fib=0;
-while(j=c){
-fib+=j;
-j++
+function fibonacci(){
+      var i = 0, j = 1, k;
+var o=document.getElementById("num2").value;
+while(i<=o)
+{
+    console.log(i + "<br />");
+    k = i+j;
+    i = j;
+    j = k;
 }
-document.write("The fibonacci ")
 }
