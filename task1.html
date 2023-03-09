@@ -18,17 +18,36 @@
         const gender = "male";
         hobby = "music";
         document.write("My Name is " + name + " , I am " + age + " years old.</br>");
-        document.write("I love listening to "+hobby+"</br>");
+        document.write("I love listening to " + hobby + "</br>");
     </script>
+    <hr>
     <h3>Perfect number,factorial,fibonacci</h3>
     <label>Enter the Number</label> </br>
     <input type="text" id="num" required>
-    
+
     <button type="button" onclick="perfectnum()">Perfect Number</button></br>
     <input type="text" id="num1" required>
     <button type="button" onclick="factorial()">Factorial</button></br>
     <input type="text" id="num2" required>
-    <button type="button" onclick="fibonacci()">Fibonacci Series</button></br>
+    <button type="button" onclick="fibonacci()">Fibonacci Series</button></br><br>
+    <hr>
+    <h3>Gender CHECK</h3>
+    <label>Enter your gender</label>
+    <input type="text" id="gender">
+    <button onclick="genderchk()">SUBMIT</button>
+    <h3>USING SWITCH </h3>
+    <label>Enter your gender</label>
+    <input type="text" id="gen">
+    <button onclick="genderchk1()">SUBMIT</button>
+    <hr>
+    <form action="">
+        <h1>REGISTRATION FORM</h1>
+        Name:<input type="text" id="name"><br><br>
+        Age:<input type="number" id="Age"><br><br>
+        Gender:<input type="text" id="gend"><br><br>
+        <button type="submit" onclick="display()">SUMBIT</button>
+    </form>
+
 </body>
 
 </html>

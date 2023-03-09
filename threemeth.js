@@ -25,13 +25,48 @@ console.log("The factorial of "+n+" is "+fact);
 }
 
 function fibonacci(){
-      var i = 0, j = 1, k;
-var o=document.getElementById("num2").value;
-while(i<=o)
-{
-    console.log(i + "<br />");
-    k = i+j;
-    i = j;
-    j = k;
+var x=document.getElementById("num2").value;
+var a=-1;
+var b=1;
+var temp=0;
+var i=1;
+str1=new String();
+while(i<=x){
+    temp=a+b;
+    a=b;
+    b=temp;
+    str1=str1+" "+temp;
+    i++;
 }
+console.log(str1);
+}
+function genderchk(){
+    var a=document.getElementById("gender").value;
+    if(a=='male')
+    console.log("You are a Male");
+    else 
+    console.log("You are a female");
+}
+function genderchk1(){
+    var g=document.getElementById("gen").value;
+    switch(g)
+    {
+        case 'male':
+            document.write("You are a male");
+            break;
+        case 'female':
+            document.write("YOu are a female");
+            break;
+        default:
+            document.write("Invalid Input");
+    }
+}
+// diplaying details
+function display(){
+    var name=document.getElementById("name").value;
+    var age=document.getElementById("Age").value;
+    var gender=document.getElementById("gend").value;
+    console.log("Name:"+name);
+    console.log("AGE:"+age);
+    console.log("GENDER:"+gend);
 }
