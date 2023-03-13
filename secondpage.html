@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function validate1() {
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var dob = document.getElementById("dob").value;
+            var fullname = fname + " " + lname;
+            var gender;
+            if ((male).checked) { gender = "male"; }
+            else {
+                gender = "female";
+            }
+            if (!fname || !lname || !dob) {
+                alert("The fields are not supposed to be empty")
+                return false;
+            }
+            else {
+                var today = new Date();
+                var bday = new Date(dob);
+                var age = today.getFullYear() - bday.getFullYear();
+
+                if (age >= 18) alert(fullname + "You can vote");
+                else alert(fullname + "Wait till you become 18 years");
+            }
+        }
+    </script>
+    <form action="" method="post">
+        FirstName:<input type="text" id="fname"><br><br>
+        LastName:<input type="text" id="lname"><br><br>
+        DOB:<input type="date" id="dob"><br><br>
+        Gender:<input type="radio" name="gender" id="male">Male<input type="radio" name="gender" id="female">Female
+        <button type="button" onclick="validate1()">SUBMIT</button>
+    </form>
+</body>
+
+</html>

@@ -72,45 +72,56 @@ function display(){
 }
 // task2
 var arr=[];
-a=document.getElementById("element");
+var text="";
 function addbeg(){
+    a=document.getElementById("element").value;
     arr.unshift(a);
+    alert(arr);
 }
 function addend(){
+    a=document.getElementById("element").value;
     arr.push(a);
+    alert(arr);
 }
 function delbeg(){
     arr.shift();
+    alert(arr);
 }
 function delend(){
     arr.pop();
+    alert(arr);
 }
 function sortarr(){
     arr.sort();
+    alert(arr);
 }
 function printarr(){
-    for(let i=0;i<arr.length;i++)
-    console.log(arr[i]);
+    
+    for(let i=0;i<arr.length;i++){
+    text += arr[i]+" ";
+}
+    alert(text);
 }
 function printarr1(){
     arr.forEach(element=>{
-        console.log(element);
+        alert(element);
     })
 }
 function printarr2(){
     for(let key in arr){
-        console.log(arr[key]);
+        alert(arr[key]);
       }
 }
 function printarr3(){
     for(let element of arr) {
-        console.log(element);
+        alert(element);
       }
 }
 function comma(){
     b=arr.toString();
-    console.log(b);
+    alert(b);
 }
 function dt(){
     alert(Date());
 }
+// task2 question2
