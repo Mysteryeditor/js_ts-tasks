@@ -70,3 +70,47 @@ function display(){
     console.log("AGE:"+age);
     console.log("GENDER:"+gend);
 }
+// task2
+var arr=[];
+a=document.getElementById("element");
+function addbeg(){
+    arr.unshift(a);
+}
+function addend(){
+    arr.push(a);
+}
+function delbeg(){
+    arr.shift();
+}
+function delend(){
+    arr.pop();
+}
+function sortarr(){
+    arr.sort();
+}
+function printarr(){
+    for(let i=0;i<arr.length;i++)
+    console.log(arr[i]);
+}
+function printarr1(){
+    arr.forEach(element=>{
+        console.log(element);
+    })
+}
+function printarr2(){
+    for(let key in arr){
+        console.log(arr[key]);
+      }
+}
+function printarr3(){
+    for(let element of arr) {
+        console.log(element);
+      }
+}
+function comma(){
+    b=arr.toString();
+    console.log(b);
+}
+function dt(){
+    alert(Date());
+}
